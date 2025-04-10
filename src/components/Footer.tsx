@@ -39,7 +39,6 @@ const Footer = () => {
               <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
               <li><a href="#games" className="hover:text-white transition-colors">Games</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -57,8 +56,8 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2">
-              <li>123 Sports Avenue, Cricketville, CA 90210</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>YMCA, S Bopal Rd, opposite Arose Foods, Mumatpura, Ahmedabad, Gujarat 380054, India</li>
+              <li>Phone: (935) 102-0114</li>
               <li>Email: info@googlyboxcricket.com</li>
               <li>Hours: Mon-Fri: 10AM-10PM,<br /> Sat-Sun: 9AM-11PM</li>
             </ul>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,12 +45,12 @@ const ContactSection = () => {
     {
       icon: <MapPin className="h-5 w-5 text-sport-blue" />,
       title: "Address",
-      details: "123 Sports Avenue, Cricketville, CA 90210",
+      details: "YMCA, S Bopal Rd, opposite Arose Foods, Mumatpura, Ahmedabad, Gujarat 380054, India",
     },
     {
       icon: <Phone className="h-5 w-5 text-sport-blue" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "(935) 102-0114",
     },
     {
       icon: <Mail className="h-5 w-5 text-sport-blue" />,
@@ -120,7 +119,7 @@ const ContactSection = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="(935) 102-0114"
                     />
                   </div>
                   <div>
@@ -179,7 +178,7 @@ const ContactSection = () => {
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <iframe
                 title="Googly Box Cricket Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203591483!2d-118.32542648478176!3d34.0699981257278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8d3b1e0287d%3A0x9cc32be17eff5e3e!2sLos%20Angeles%2C%20CA%2090004%2C%20USA!5e0!3m2!1sen!2sin!4v1650123456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.926653445915!2d72.46184153083681!3d23.02499140000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b2c1f14ab0d%3A0x6adca0f72cdb9ed4!2sYMCA%2C%20S%20Bopal%20Rd%2C%20opposite%20Arose%20Foods%2C%20Mumatpura%2C%20Ahmedabad%2C%20Gujarat%20380054%2C%20India!5e0!3m2!1sen!2sus!4v1712778479588!5m2!1sen!2sus"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}

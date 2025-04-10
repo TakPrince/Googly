@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -13,21 +14,25 @@ const GamesSection = () => {
   const games = [
     {
       name: "Cricket",
+      slug: "cricket",
       image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Experience indoor cricket with state-of-the-art bowling machines and professional nets."
     },
     {
       name: "VR Gaming",
+      slug: "vr-gaming",
       image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Immerse yourself in cutting-edge virtual reality sports experiences and simulations."
     },
     {
       name: "Pickleball",
+      slug: "pickleball",
       image: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Enjoy the fastest-growing sport in the world on our custom indoor courts."
     },
     {
       name: "Football",
+      slug: "football",
       image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Play 5-a-side indoor football on our professional turf with atmospheric lighting."
     }
@@ -63,12 +68,12 @@ const GamesSection = () => {
                     </div>
                     <CardContent className="p-4">
                       <p className="text-gray-600">{game.description}</p>
-                      <a 
-                        href="#" 
+                      <Link 
+                        to={`/games/${game.slug}`}
                         className="inline-flex items-center text-sport-blue mt-3 hover:text-sport-orange transition-colors"
                       >
                         Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                      </a>
+                      </Link>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -95,12 +100,12 @@ const GamesSection = () => {
               </div>
               <CardContent className="p-4">
                 <p className="text-gray-600">{game.description}</p>
-                <a 
-                  href="#" 
+                <Link 
+                  to={`/games/${game.slug}`}
                   className="inline-flex items-center text-sport-blue mt-3 hover:text-sport-orange transition-colors"
                 >
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                </a>
+                </Link>
               </CardContent>
             </Card>
           ))}

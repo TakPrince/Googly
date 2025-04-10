@@ -28,7 +28,6 @@ const Navbar = () => {
     { name: "Games", href: "#games" },
     { name: "How It Works", href: "#how-it-works" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Pricing", href: "#pricing" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "FAQs", href: "#faqs" },
     { name: "Contact", href: "#contact" },
@@ -37,8 +36,12 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-bold text-sport-blue flex items-center">
-          <span className="text-sport-orange">Googly</span> Box Cricket
+        <a href="#home" className="flex items-center">
+          <img 
+            src="/lovable-uploads/d75d4f53-8fbb-4887-b3d3-ee2bc5d68168.png" 
+            alt="Googly Sports Logo" 
+            className="h-12 md:h-16"
+          />
         </a>
         
         {/* Desktop Navigation */}

@@ -103,13 +103,7 @@ const HeroSection = () => {
             >
               Book Now <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline"
-              className="border-white text-white hover:bg-white/20 text-lg px-8 py-6"
-              size="lg"
-            >
-              Explore Games
-            </Button>
+          
           </div>
         </div>
         
